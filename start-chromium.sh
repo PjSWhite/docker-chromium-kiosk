@@ -9,7 +9,6 @@ chromium_base_params="--allow-insecure-localhost \
                       --disable-software-rasterizer \
                       --check-for-update-interval=315360000 \
                       --no-sandbox \
-                      --test-type \
                       --disable-features=UseOzonePlatform \
 		                  --in-process-gpu \
 		                  --disable-gpu-compositing \
