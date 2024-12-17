@@ -8,7 +8,6 @@ chromium_base_params="--allow-insecure-localhost \
                       --disable-gpu \
                       --disable-software-rasterizer \
                       --check-for-update-interval=315360000 \
-                      --no-sandbox \
                       --disable-features=UseOzonePlatform \
 		                  --in-process-gpu \
 		                  --disable-gpu-compositing \
@@ -47,4 +46,4 @@ done
 
 # Don't double quote, otherwise expanded arguments end up with `'`
 # shellcheck disable=SC2086
-chromium $chromium_base_params $chromium_extended_params $chromium_mode_params$URL
+chromium $chromium_base_params $chromium_extended_params $chromium_mode_params $URL
