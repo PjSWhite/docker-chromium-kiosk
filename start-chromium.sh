@@ -11,7 +11,8 @@ chromium_base_params="--allow-insecure-localhost \
                       --no-sandbox \
                       --disable-features=UseOzonePlatform \
 		                  --in-process-gpu \
-		                  --disable-gpu-compositing
+		                  --disable-gpu-compositing \
+                      --window-size=1920,1080
                       "
 
 chromium_mode_params="--kiosk "
