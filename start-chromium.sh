@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # default URL
-URL="http://localhost:9002"
+URL="www.toradex.com"
 
 chromium_base_params="--allow-insecure-localhost \
                       --disable-notifications \
@@ -9,10 +9,11 @@ chromium_base_params="--allow-insecure-localhost \
                       --disable-software-rasterizer \
                       --check-for-update-interval=315360000 \
                       --no-sandbox \
+                      --test-type \
                       --disable-features=UseOzonePlatform \
+                      --window-size=1920,1080 \
 		                  --in-process-gpu \
-		                  --disable-gpu-compositing \
-                      --window-size=1920,1080
+		                  --disable-gpu-compositing
                       "
 
 chromium_mode_params="--kiosk "
@@ -47,4 +48,4 @@ done
 
 # Don't double quote, otherwise expanded arguments end up with `'`
 # shellcheck disable=SC2086
-chromium $chromium_base_params $chromium_extended_params $chromium_mode_params $URL
+chromium $chromium_base_params $chromium_extended_params $chromium_mode_params$URL
