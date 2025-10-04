@@ -34,4 +34,4 @@ jobs:
             build-args: |
               BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
             tags: |
-              ghcr.io/vdovhanych/chromium-kiosk:latest
+              ghcr.io/PjSWhite/chromium-kiosk:latest
